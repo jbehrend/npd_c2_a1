@@ -14,6 +14,7 @@ def get_50_integers():
     return list(range(1,51))
 
 def is_divisible(divisible_by,integer_list):
+    '''Find all integers in a given list that are divisible by a given number'''
     divisible_list = []
     for number in integer_list:
         if number % divisible_by == 0:
@@ -21,9 +22,11 @@ def is_divisible(divisible_by,integer_list):
     return divisible_list
 
 def is_even():
+    '''Return all even numbers in a given list'''   
     return is_divisible(2, get_50_integers())
 
 def divisible_by_7():
+    '''Return all numbers divisible by 7 in a given list''' 
     return is_divisible(7, get_50_integers())
 
 print(sum(is_even())-sum(divisible_by_7()))
