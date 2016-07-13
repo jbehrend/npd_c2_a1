@@ -4,8 +4,8 @@ the sum of numbers that are divisible by 7.'''
 '''
 Sub questions
 * What are the integers 1 through 50?
-* What numbers are divisible by 7?
-* What are the sum of a list of numbers?
+* What numbers are divisible by 7 in a certain list?
+* What are even numbers in a certain list?
 * What is the difference between two numbers?
 '''
 
@@ -26,6 +26,8 @@ def is_even():
 def divisible_by_7():
     return is_divisible(7, get_50_integers())
 
-print(is_even())
+print(sum(is_even())-sum(divisible_by_7()))
+
+
 
     
